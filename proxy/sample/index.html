@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sample PIR Page</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+    </head>
+    <body>
+        Enter Page Number:
+
+        <input type="text" id="rpicker">
+        <button id='pload'>Private Load</button>
+        <button id='load'>Load</button>
+
+        <div id="images" style="margin-top: 50px; margin-left: 100px">
+        </div>
+        <script>
+            $("#pload").click(function() {
+                var block = $("#rpicker").val();
+
+                var img = $("<img />").attr('src', 'http://10.0.2.2/pir/' + block)
+                .on('load', function() {
+                    if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+                        alert('broken image!');
+                    } else {
+                        $("#images").html('');
+                        $("#images").append(img);
+                    }
+                });
+            })
+            $("#load").click(function() {
+                var block = $("#rpicker").val();
+
+                var img = $("<img />").attr('src', 'http://10.0.2.2/' + block)
+                .on('load', function() {
+                    if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+                        alert('broken image!');
+                    } else {
+                        $("#images").html('');
+                        $("#images").append(img);
+                    }
+                });
+            })
+        </script>
+    </body>
+</html>
