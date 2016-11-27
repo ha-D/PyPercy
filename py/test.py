@@ -1,38 +1,97 @@
 from pypercy import *
+import unittest
 import sys
+import logging
+import time
 
 db = '/home/hadi/database'
-query = 0
-block_size = 100
-num_blocks = 10
+with open(db, 'rb') as f:
+    db_content = f.read()
 
-if len(sys.argv) > 1:
-   db = sys.argv[1]
-if len(sys.argv) > 2:
-   num_blocks = int(sys.argv[2])
-   block_size = int(sys.argv[3])
-   query = int(sys.argv[4])
+def params(**kwargs):
+    def wrapper(f):
+        def inner(self, **ikwargs):
+            kwargs.update(ikwargs)
+            return f(self, **kwargs)
+        inner.__name__ = f.__name__
+        return inner
+    return wrapper
+
+log_handler = logging.StreamHandler()
+log_handler.setLevel(logging.DEBUG)
+log_formatter = logging.Formatter("%(name)s - %(message)s")
+log_handler.setFormatter(log_formatter)
+def log(level=logging.DEBUG):
+    def wrapper(f):
+        def inner(self, *args, **kwargs):
+            logger = logging.getLogger("{}.{}".format(self.__class__.__name__, f.__name__))
+            logger.addHandler(log_handler)
+            logger.setLevel(level)
+            kwargs['log'] = logger
+            return f(self, *args, **kwargs)
+        return inner
+    return wrapper
 
 
-server = ZAGServer(db, num_blocks=num_blocks, block_size=block_size)
-print("Started Server: ")
-print("Database: %s  NumBlocks: %d  BlockSize: %d" % (db, num_blocks, block_size))
+class TestAGPIR(unittest.TestCase):
+    @log(logging.DEBUG)
+    @params(num_blocks=10, block_size=100, query=0)
+    @unittest.skip("fuck off")
+    def test_nb10_bs100(self, log, num_blocks, block_size, query):
+        server = ZAGServer(db, num_blocks=num_blocks, block_size=block_size)
+        client = ZAGClient(num_blocks=num_blocks, block_size=block_size)
 
-client = ZAGClient(num_blocks=num_blocks, block_size=block_size)
-req_id = client.make_request(query)
-req = client.get_request()
-print("\nBlock %d requested" % query)
-print("Request ID: %d" % req_id)
-print("Request Size: %d" % len(req))
+        t, req_id = gettime(client.make_request, query)
+        log.debug("client request time:  {}".format(t))
 
-server.process_request(req)
-sresp = server.get_response()
-print("\nServer response generated")
-print("Server Response Size: %d" % len(sresp))
+        req = client.get_request()
+        log.debug('client request size:  {}'.format(len(req)))
 
-client.parse_response(sresp)
-resp = client.get_response()
-print("\nResponse Parsed")
-print("Response Size: %d" % len(resp))
-print("Response:")
-print(resp)
+        t, _ = gettime(server.process_request, req)
+        log.debug('server process time:  {}'.format(t))
+
+        sresp = server.get_response()
+        log.debug('server response size: {}'.format(len(sresp)))
+
+        t, _ = gettime(client.parse_response, sresp)
+        log.debug('client parse time:    {}'.format(t))
+
+        resp = client.get_response()
+
+        self.assertEqual(db_content[query * block_size: (query+1) * block_size], resp, 'PIR content matches DB')
+
+class TestITPIR(unittest.TestCase):
+    @log(logging.DEBUG)
+    @params(query=0, num_blocks=10, block_size=100, word_size=2048, num_servers=1, t=2)
+    def test_nb10_bs100(self, log, query, num_blocks, block_size, word_size, num_servers, t):
+        # server = ZITZZPServer(db, num_blocks=num_blocks, block_size=block_size, word_size=word_size)
+        client = ZITZZPClient(num_blocks=num_blocks, block_size=block_size, word_size=word_size, t=2, num_servers=num_servers)
+        #
+        # t, req_id = gettime(client.make_request, query)
+        # log.debug("client request time:  {}".format(t))
+        # #
+        # req = client.get_request()
+        # log.debug('client request size:  {}'.format(len(req)))
+        # #
+        # t, _ = gettime(server.process_request, req)
+        # log.debug('server process time:  {}'.format(t))
+        # #
+        # sresp = server.get_response()
+        # log.debug('server response size: {}'.format(len(sresp)))
+        #
+        # t, _ = gettime(client.parse_response, sresp)
+        # log.debug('client parse time:    {}'.format(t))
+
+        # resp = client.get_response()
+        #
+        # self.assertEqual(db_content[query * block_size: (query+1) * block_size], resp, 'PIR content matches DB')
+
+
+def gettime(f, *args, **kwargs):
+    start = time.time()
+    res = f(*args, **kwargs)
+    return time.time() - start, res
+
+
+if __name__ == '__main__':
+    unittest.main()

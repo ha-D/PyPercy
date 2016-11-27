@@ -441,153 +441,9 @@ include /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percystats.cc.o.provides.build: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percystats.cc.o
 
 
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o: /home/hadi/Projects/PIR/percy/pirclient.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/pirclient.cc.o -c /home/hadi/Projects/PIR/percy/pirclient.cc
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/percy.dir/pirclient.cc.i"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hadi/Projects/PIR/percy/pirclient.cc > CMakeFiles/percy.dir/pirclient.cc.i
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/percy.dir/pirclient.cc.s"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hadi/Projects/PIR/percy/pirclient.cc -o CMakeFiles/percy.dir/pirclient.cc.s
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o.requires:
-
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o.requires
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o.provides: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o.requires
-	$(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o.provides.build
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o.provides
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o.provides.build: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o
-
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o: /home/hadi/Projects/PIR/percy/pirclient_ag.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/pirclient_ag.cc.o -c /home/hadi/Projects/PIR/percy/pirclient_ag.cc
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/percy.dir/pirclient_ag.cc.i"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hadi/Projects/PIR/percy/pirclient_ag.cc > CMakeFiles/percy.dir/pirclient_ag.cc.i
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/percy.dir/pirclient_ag.cc.s"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hadi/Projects/PIR/percy/pirclient_ag.cc -o CMakeFiles/percy.dir/pirclient_ag.cc.s
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o.requires:
-
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o.requires
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o.provides: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o.requires
-	$(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o.provides.build
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o.provides
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o.provides.build: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o
-
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o: /home/hadi/Projects/PIR/percy/pirclient_hybrid.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/pirclient_hybrid.cc.o -c /home/hadi/Projects/PIR/percy/pirclient_hybrid.cc
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/percy.dir/pirclient_hybrid.cc.i"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hadi/Projects/PIR/percy/pirclient_hybrid.cc > CMakeFiles/percy.dir/pirclient_hybrid.cc.i
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/percy.dir/pirclient_hybrid.cc.s"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hadi/Projects/PIR/percy/pirclient_hybrid.cc -o CMakeFiles/percy.dir/pirclient_hybrid.cc.s
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o.requires:
-
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o.requires
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o.provides: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o.requires
-	$(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o.provides.build
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o.provides
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o.provides.build: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o
-
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o: /home/hadi/Projects/PIR/percy/pirserver.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/pirserver.cc.o -c /home/hadi/Projects/PIR/percy/pirserver.cc
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/percy.dir/pirserver.cc.i"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hadi/Projects/PIR/percy/pirserver.cc > CMakeFiles/percy.dir/pirserver.cc.i
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/percy.dir/pirserver.cc.s"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hadi/Projects/PIR/percy/pirserver.cc -o CMakeFiles/percy.dir/pirserver.cc.s
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o.requires:
-
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o.requires
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o.provides: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o.requires
-	$(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o.provides.build
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o.provides
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o.provides.build: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o
-
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o: /home/hadi/Projects/PIR/percy/pirserver_ag.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/pirserver_ag.cc.o -c /home/hadi/Projects/PIR/percy/pirserver_ag.cc
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/percy.dir/pirserver_ag.cc.i"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hadi/Projects/PIR/percy/pirserver_ag.cc > CMakeFiles/percy.dir/pirserver_ag.cc.i
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/percy.dir/pirserver_ag.cc.s"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hadi/Projects/PIR/percy/pirserver_ag.cc -o CMakeFiles/percy.dir/pirserver_ag.cc.s
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o.requires:
-
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o.requires
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o.provides: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o.requires
-	$(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o.provides.build
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o.provides
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o.provides.build: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o
-
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o: /home/hadi/Projects/PIR/percy/pirserver_hybrid.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/pirserver_hybrid.cc.o -c /home/hadi/Projects/PIR/percy/pirserver_hybrid.cc
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/percy.dir/pirserver_hybrid.cc.i"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hadi/Projects/PIR/percy/pirserver_hybrid.cc > CMakeFiles/percy.dir/pirserver_hybrid.cc.i
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/percy.dir/pirserver_hybrid.cc.s"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hadi/Projects/PIR/percy/pirserver_hybrid.cc -o CMakeFiles/percy.dir/pirserver_hybrid.cc.s
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o.requires:
-
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o.requires
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o.provides: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o.requires
-	$(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o.provides.build
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o.provides
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o.provides.build: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o
-
-
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.o: /home/hadi/Projects/PIR/percy/portfolio.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.o"
 	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/portfolio.cc.o -c /home/hadi/Projects/PIR/percy/portfolio.cc
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.i: cmake_force
@@ -611,7 +467,7 @@ include /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.o: /home/hadi/Projects/PIR/percy/recover.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.o"
 	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/recover.cc.o -c /home/hadi/Projects/PIR/percy/recover.cc
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.i: cmake_force
@@ -635,7 +491,7 @@ include /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.o: /home/hadi/Projects/PIR/percy/recursiveclient.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.o"
 	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/recursiveclient.cc.o -c /home/hadi/Projects/PIR/percy/recursiveclient.cc
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.i: cmake_force
@@ -659,7 +515,7 @@ include /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.o: /home/hadi/Projects/PIR/percy/recursiveparams.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.o"
 	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/recursiveparams.cc.o -c /home/hadi/Projects/PIR/percy/recursiveparams.cc
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.i: cmake_force
@@ -683,7 +539,7 @@ include /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.o: /home/hadi/Projects/PIR/percy/recursiveserver.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.o"
 	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/recursiveserver.cc.o -c /home/hadi/Projects/PIR/percy/recursiveserver.cc
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.i: cmake_force
@@ -707,7 +563,7 @@ include /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.o: /home/hadi/Projects/PIR/percy/rsdecoder.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.o"
 	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/rsdecoder.cc.o -c /home/hadi/Projects/PIR/percy/rsdecoder.cc
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.i: cmake_force
@@ -729,33 +585,9 @@ include /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.o.provides.build: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.o
 
 
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o: /home/hadi/Projects/PIR/percy/splitdatabase.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/splitdatabase.cc.o -c /home/hadi/Projects/PIR/percy/splitdatabase.cc
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/percy.dir/splitdatabase.cc.i"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hadi/Projects/PIR/percy/splitdatabase.cc > CMakeFiles/percy.dir/splitdatabase.cc.i
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/percy.dir/splitdatabase.cc.s"
-	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hadi/Projects/PIR/percy/splitdatabase.cc -o CMakeFiles/percy.dir/splitdatabase.cc.s
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o.requires:
-
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o.requires
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o.provides: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o.requires
-	$(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o.provides.build
-.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o.provides
-
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o.provides.build: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o
-
-
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.o: /home/hadi/Projects/PIR/percy/streams.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.o"
 	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/streams.cc.o -c /home/hadi/Projects/PIR/percy/streams.cc
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.i: cmake_force
@@ -779,7 +611,7 @@ include /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.o: /home/hadi/Projects/PIR/percy/subset.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.o"
 	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/subset.cc.o -c /home/hadi/Projects/PIR/percy/subset.cc
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.i: cmake_force
@@ -803,7 +635,7 @@ include /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.o: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/flags.make
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.o: /home/hadi/Projects/PIR/percy/subset_iter.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.o"
 	cd /home/hadi/Projects/PIR/pypercy/percy && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/percy.dir/subset_iter.cc.o -c /home/hadi/Projects/PIR/percy/subset_iter.cc
 
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.i: cmake_force
@@ -843,19 +675,12 @@ percy_OBJECTS = \
 "CMakeFiles/percy.dir/percyparams.cc.o" \
 "CMakeFiles/percy.dir/percyserver.cc.o" \
 "CMakeFiles/percy.dir/percystats.cc.o" \
-"CMakeFiles/percy.dir/pirclient.cc.o" \
-"CMakeFiles/percy.dir/pirclient_ag.cc.o" \
-"CMakeFiles/percy.dir/pirclient_hybrid.cc.o" \
-"CMakeFiles/percy.dir/pirserver.cc.o" \
-"CMakeFiles/percy.dir/pirserver_ag.cc.o" \
-"CMakeFiles/percy.dir/pirserver_hybrid.cc.o" \
 "CMakeFiles/percy.dir/portfolio.cc.o" \
 "CMakeFiles/percy.dir/recover.cc.o" \
 "CMakeFiles/percy.dir/recursiveclient.cc.o" \
 "CMakeFiles/percy.dir/recursiveparams.cc.o" \
 "CMakeFiles/percy.dir/recursiveserver.cc.o" \
 "CMakeFiles/percy.dir/rsdecoder.cc.o" \
-"CMakeFiles/percy.dir/splitdatabase.cc.o" \
 "CMakeFiles/percy.dir/streams.cc.o" \
 "CMakeFiles/percy.dir/subset.cc.o" \
 "CMakeFiles/percy.dir/subset_iter.cc.o"
@@ -879,25 +704,18 @@ percy_EXTERNAL_OBJECTS =
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyparams.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyserver.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percystats.cc.o
-/home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o
-/home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o
-/home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o
-/home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o
-/home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o
-/home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.o
-/home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.o
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make
 /home/hadi/Projects/PIR/pypercy/percy/libpercy.a: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX static library libpercy.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hadi/Projects/PIR/pypercy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX static library libpercy.a"
 	cd /home/hadi/Projects/PIR/pypercy/percy && $(CMAKE_COMMAND) -P CMakeFiles/percy.dir/cmake_clean_target.cmake
 	cd /home/hadi/Projects/PIR/pypercy/percy && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/percy.dir/link.txt --verbose=$(VERBOSE)
 
@@ -922,19 +740,12 @@ percy_EXTERNAL_OBJECTS =
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyparams.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyserver.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percystats.cc.o.requires
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o.requires
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o.requires
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o.requires
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o.requires
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o.requires
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.o.requires
-/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.o.requires
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/requires: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.o.requires

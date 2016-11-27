@@ -111,6 +111,51 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/rule:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f CMakeFiles/Makefile2 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/rule
+.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/rule
+
+# Convenience name for target.
+hybridserver: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/rule
+
+.PHONY : hybridserver
+
+# fast build rule for target.
+hybridserver/fast:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build
+.PHONY : hybridserver/fast
+
+# Convenience name for target.
+/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/rule:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f CMakeFiles/Makefile2 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/rule
+.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/rule
+
+# Convenience name for target.
+hybridclient: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/rule
+
+.PHONY : hybridclient
+
+# fast build rule for target.
+hybridclient/fast:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build
+.PHONY : hybridclient/fast
+
+# Convenience name for target.
+/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/rule:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f CMakeFiles/Makefile2 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/rule
+.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/rule
+
+# Convenience name for target.
+agserver: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/rule
+
+.PHONY : agserver
+
+# fast build rule for target.
+agserver/fast:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build
+.PHONY : agserver/fast
+
+# Convenience name for target.
 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rule:
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f CMakeFiles/Makefile2 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rule
 .PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rule
@@ -125,13 +170,64 @@ percy/fast:
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build
 .PHONY : percy/fast
 
+# Convenience name for target.
+/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/rule:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f CMakeFiles/Makefile2 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/rule
+.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/rule
+
+# Convenience name for target.
+agclient: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/rule
+
+.PHONY : agclient
+
+# fast build rule for target.
+agclient/fast:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build
+.PHONY : agclient/fast
+
+# Convenience name for target.
+/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/rule:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f CMakeFiles/Makefile2 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/rule
+.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/rule
+
+# Convenience name for target.
+pirclient: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/rule
+
+.PHONY : pirclient
+
+# fast build rule for target.
+pirclient/fast:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build
+.PHONY : pirclient/fast
+
+# Convenience name for target.
+/home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/rule:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f CMakeFiles/Makefile2 /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/rule
+.PHONY : /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/rule
+
+# Convenience name for target.
+pirserver: /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/rule
+
+.PHONY : pirserver
+
+# fast build rule for target.
+pirserver/fast:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build
+.PHONY : pirserver/fast
+
 FXY.o: FXY.cc.o
 
 .PHONY : FXY.o
 
 # target to build an object file
 FXY.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/FXY.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/FXY.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/FXY.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/FXY.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/FXY.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/FXY.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/FXY.cc.o
 .PHONY : FXY.cc.o
 
 FXY.i: FXY.cc.i
@@ -140,7 +236,13 @@ FXY.i: FXY.cc.i
 
 # target to preprocess a source file
 FXY.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/FXY.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/FXY.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/FXY.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/FXY.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/FXY.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/FXY.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/FXY.cc.i
 .PHONY : FXY.cc.i
 
 FXY.s: FXY.cc.s
@@ -149,7 +251,13 @@ FXY.s: FXY.cc.s
 
 # target to generate assembly for a file
 FXY.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/FXY.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/FXY.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/FXY.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/FXY.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/FXY.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/FXY.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/FXY.cc.s
 .PHONY : FXY.cc.s
 
 agclient.o: agclient.cc.o
@@ -158,7 +266,13 @@ agclient.o: agclient.cc.o
 
 # target to build an object file
 agclient.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/agclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/agclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/agclient.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/agclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/agclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/agclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/agclient.cc.o
 .PHONY : agclient.cc.o
 
 agclient.i: agclient.cc.i
@@ -167,7 +281,13 @@ agclient.i: agclient.cc.i
 
 # target to preprocess a source file
 agclient.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/agclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/agclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/agclient.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/agclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/agclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/agclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/agclient.cc.i
 .PHONY : agclient.cc.i
 
 agclient.s: agclient.cc.s
@@ -176,7 +296,13 @@ agclient.s: agclient.cc.s
 
 # target to generate assembly for a file
 agclient.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/agclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/agclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/agclient.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/agclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/agclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/agclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/agclient.cc.s
 .PHONY : agclient.cc.s
 
 agparams.o: agparams.cc.o
@@ -185,7 +311,13 @@ agparams.o: agparams.cc.o
 
 # target to build an object file
 agparams.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/agparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/agparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/agparams.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/agparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/agparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/agparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/agparams.cc.o
 .PHONY : agparams.cc.o
 
 agparams.i: agparams.cc.i
@@ -194,7 +326,13 @@ agparams.i: agparams.cc.i
 
 # target to preprocess a source file
 agparams.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/agparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/agparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/agparams.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/agparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/agparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/agparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/agparams.cc.i
 .PHONY : agparams.cc.i
 
 agparams.s: agparams.cc.s
@@ -203,7 +341,13 @@ agparams.s: agparams.cc.s
 
 # target to generate assembly for a file
 agparams.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/agparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/agparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/agparams.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/agparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/agparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/agparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/agparams.cc.s
 .PHONY : agparams.cc.s
 
 agserver.o: agserver.cc.o
@@ -212,7 +356,13 @@ agserver.o: agserver.cc.o
 
 # target to build an object file
 agserver.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/agserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/agserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/agserver.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/agserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/agserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/agserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/agserver.cc.o
 .PHONY : agserver.cc.o
 
 agserver.i: agserver.cc.i
@@ -221,7 +371,13 @@ agserver.i: agserver.cc.i
 
 # target to preprocess a source file
 agserver.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/agserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/agserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/agserver.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/agserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/agserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/agserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/agserver.cc.i
 .PHONY : agserver.cc.i
 
 agserver.s: agserver.cc.s
@@ -230,7 +386,13 @@ agserver.s: agserver.cc.s
 
 # target to generate assembly for a file
 agserver.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/agserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/agserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/agserver.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/agserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/agserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/agserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/agserver.cc.s
 .PHONY : agserver.cc.s
 
 datastore.o: datastore.cc.o
@@ -239,7 +401,13 @@ datastore.o: datastore.cc.o
 
 # target to build an object file
 datastore.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/datastore.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/datastore.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/datastore.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/datastore.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/datastore.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/datastore.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/datastore.cc.o
 .PHONY : datastore.cc.o
 
 datastore.i: datastore.cc.i
@@ -248,7 +416,13 @@ datastore.i: datastore.cc.i
 
 # target to preprocess a source file
 datastore.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/datastore.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/datastore.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/datastore.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/datastore.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/datastore.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/datastore.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/datastore.cc.i
 .PHONY : datastore.cc.i
 
 datastore.s: datastore.cc.s
@@ -257,7 +431,13 @@ datastore.s: datastore.cc.s
 
 # target to generate assembly for a file
 datastore.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/datastore.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/datastore.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/datastore.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/datastore.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/datastore.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/datastore.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/datastore.cc.s
 .PHONY : datastore.cc.s
 
 gf2e.o: gf2e.cc.o
@@ -266,7 +446,13 @@ gf2e.o: gf2e.cc.o
 
 # target to build an object file
 gf2e.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/gf2e.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/gf2e.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/gf2e.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/gf2e.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/gf2e.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/gf2e.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/gf2e.cc.o
 .PHONY : gf2e.cc.o
 
 gf2e.i: gf2e.cc.i
@@ -275,7 +461,13 @@ gf2e.i: gf2e.cc.i
 
 # target to preprocess a source file
 gf2e.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/gf2e.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/gf2e.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/gf2e.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/gf2e.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/gf2e.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/gf2e.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/gf2e.cc.i
 .PHONY : gf2e.cc.i
 
 gf2e.s: gf2e.cc.s
@@ -284,7 +476,13 @@ gf2e.s: gf2e.cc.s
 
 # target to generate assembly for a file
 gf2e.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/gf2e.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/gf2e.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/gf2e.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/gf2e.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/gf2e.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/gf2e.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/gf2e.cc.s
 .PHONY : gf2e.cc.s
 
 hybridparams.o: hybridparams.cc.o
@@ -293,7 +491,13 @@ hybridparams.o: hybridparams.cc.o
 
 # target to build an object file
 hybridparams.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/hybridparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/hybridparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/hybridparams.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/hybridparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/hybridparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/hybridparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/hybridparams.cc.o
 .PHONY : hybridparams.cc.o
 
 hybridparams.i: hybridparams.cc.i
@@ -302,7 +506,13 @@ hybridparams.i: hybridparams.cc.i
 
 # target to preprocess a source file
 hybridparams.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/hybridparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/hybridparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/hybridparams.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/hybridparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/hybridparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/hybridparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/hybridparams.cc.i
 .PHONY : hybridparams.cc.i
 
 hybridparams.s: hybridparams.cc.s
@@ -311,7 +521,13 @@ hybridparams.s: hybridparams.cc.s
 
 # target to generate assembly for a file
 hybridparams.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/hybridparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/hybridparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/hybridparams.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/hybridparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/hybridparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/hybridparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/hybridparams.cc.s
 .PHONY : hybridparams.cc.s
 
 itclient.o: itclient.cc.o
@@ -320,7 +536,13 @@ itclient.o: itclient.cc.o
 
 # target to build an object file
 itclient.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/itclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/itclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/itclient.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/itclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/itclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/itclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/itclient.cc.o
 .PHONY : itclient.cc.o
 
 itclient.i: itclient.cc.i
@@ -329,7 +551,13 @@ itclient.i: itclient.cc.i
 
 # target to preprocess a source file
 itclient.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/itclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/itclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/itclient.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/itclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/itclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/itclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/itclient.cc.i
 .PHONY : itclient.cc.i
 
 itclient.s: itclient.cc.s
@@ -338,7 +566,13 @@ itclient.s: itclient.cc.s
 
 # target to generate assembly for a file
 itclient.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/itclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/itclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/itclient.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/itclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/itclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/itclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/itclient.cc.s
 .PHONY : itclient.cc.s
 
 itparams.o: itparams.cc.o
@@ -347,7 +581,13 @@ itparams.o: itparams.cc.o
 
 # target to build an object file
 itparams.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/itparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/itparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/itparams.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/itparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/itparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/itparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/itparams.cc.o
 .PHONY : itparams.cc.o
 
 itparams.i: itparams.cc.i
@@ -356,7 +596,13 @@ itparams.i: itparams.cc.i
 
 # target to preprocess a source file
 itparams.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/itparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/itparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/itparams.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/itparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/itparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/itparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/itparams.cc.i
 .PHONY : itparams.cc.i
 
 itparams.s: itparams.cc.s
@@ -365,7 +611,13 @@ itparams.s: itparams.cc.s
 
 # target to generate assembly for a file
 itparams.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/itparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/itparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/itparams.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/itparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/itparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/itparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/itparams.cc.s
 .PHONY : itparams.cc.s
 
 itserver.o: itserver.cc.o
@@ -374,7 +626,13 @@ itserver.o: itserver.cc.o
 
 # target to build an object file
 itserver.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/itserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/itserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/itserver.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/itserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/itserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/itserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/itserver.cc.o
 .PHONY : itserver.cc.o
 
 itserver.i: itserver.cc.i
@@ -383,7 +641,13 @@ itserver.i: itserver.cc.i
 
 # target to preprocess a source file
 itserver.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/itserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/itserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/itserver.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/itserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/itserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/itserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/itserver.cc.i
 .PHONY : itserver.cc.i
 
 itserver.s: itserver.cc.s
@@ -392,7 +656,13 @@ itserver.s: itserver.cc.s
 
 # target to generate assembly for a file
 itserver.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/itserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/itserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/itserver.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/itserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/itserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/itserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/itserver.cc.s
 .PHONY : itserver.cc.s
 
 nullclient.o: nullclient.cc.o
@@ -401,7 +671,13 @@ nullclient.o: nullclient.cc.o
 
 # target to build an object file
 nullclient.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/nullclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/nullclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/nullclient.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/nullclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/nullclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/nullclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/nullclient.cc.o
 .PHONY : nullclient.cc.o
 
 nullclient.i: nullclient.cc.i
@@ -410,7 +686,13 @@ nullclient.i: nullclient.cc.i
 
 # target to preprocess a source file
 nullclient.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/nullclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/nullclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/nullclient.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/nullclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/nullclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/nullclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/nullclient.cc.i
 .PHONY : nullclient.cc.i
 
 nullclient.s: nullclient.cc.s
@@ -419,7 +701,13 @@ nullclient.s: nullclient.cc.s
 
 # target to generate assembly for a file
 nullclient.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/nullclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/nullclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/nullclient.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/nullclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/nullclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/nullclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/nullclient.cc.s
 .PHONY : nullclient.cc.s
 
 percyclient.o: percyclient.cc.o
@@ -428,7 +716,13 @@ percyclient.o: percyclient.cc.o
 
 # target to build an object file
 percyclient.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyclient.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyclient.cc.o
 .PHONY : percyclient.cc.o
 
 percyclient.i: percyclient.cc.i
@@ -437,7 +731,13 @@ percyclient.i: percyclient.cc.i
 
 # target to preprocess a source file
 percyclient.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyclient.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyclient.cc.i
 .PHONY : percyclient.cc.i
 
 percyclient.s: percyclient.cc.s
@@ -446,7 +746,13 @@ percyclient.s: percyclient.cc.s
 
 # target to generate assembly for a file
 percyclient.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyclient.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyclient.cc.s
 .PHONY : percyclient.cc.s
 
 percyio.o: percyio.cc.o
@@ -455,7 +761,13 @@ percyio.o: percyio.cc.o
 
 # target to build an object file
 percyio.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyio.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyio.cc.o
 .PHONY : percyio.cc.o
 
 percyio.i: percyio.cc.i
@@ -464,7 +776,13 @@ percyio.i: percyio.cc.i
 
 # target to preprocess a source file
 percyio.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyio.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyio.cc.i
 .PHONY : percyio.cc.i
 
 percyio.s: percyio.cc.s
@@ -473,7 +791,13 @@ percyio.s: percyio.cc.s
 
 # target to generate assembly for a file
 percyio.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyio.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyio.cc.s
 .PHONY : percyio.cc.s
 
 percyparams.o: percyparams.cc.o
@@ -482,7 +806,13 @@ percyparams.o: percyparams.cc.o
 
 # target to build an object file
 percyparams.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyparams.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyparams.cc.o
 .PHONY : percyparams.cc.o
 
 percyparams.i: percyparams.cc.i
@@ -491,7 +821,13 @@ percyparams.i: percyparams.cc.i
 
 # target to preprocess a source file
 percyparams.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyparams.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyparams.cc.i
 .PHONY : percyparams.cc.i
 
 percyparams.s: percyparams.cc.s
@@ -500,7 +836,13 @@ percyparams.s: percyparams.cc.s
 
 # target to generate assembly for a file
 percyparams.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyparams.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyparams.cc.s
 .PHONY : percyparams.cc.s
 
 percyserver.o: percyserver.cc.o
@@ -509,7 +851,13 @@ percyserver.o: percyserver.cc.o
 
 # target to build an object file
 percyserver.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyserver.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyserver.cc.o
 .PHONY : percyserver.cc.o
 
 percyserver.i: percyserver.cc.i
@@ -518,7 +866,13 @@ percyserver.i: percyserver.cc.i
 
 # target to preprocess a source file
 percyserver.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyserver.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyserver.cc.i
 .PHONY : percyserver.cc.i
 
 percyserver.s: percyserver.cc.s
@@ -527,7 +881,13 @@ percyserver.s: percyserver.cc.s
 
 # target to generate assembly for a file
 percyserver.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percyserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percyserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percyserver.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percyserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percyserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percyserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percyserver.cc.s
 .PHONY : percyserver.cc.s
 
 percystats.o: percystats.cc.o
@@ -536,7 +896,13 @@ percystats.o: percystats.cc.o
 
 # target to build an object file
 percystats.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percystats.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percystats.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percystats.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percystats.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percystats.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percystats.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percystats.cc.o
 .PHONY : percystats.cc.o
 
 percystats.i: percystats.cc.i
@@ -545,7 +911,13 @@ percystats.i: percystats.cc.i
 
 # target to preprocess a source file
 percystats.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percystats.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percystats.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percystats.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percystats.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percystats.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percystats.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percystats.cc.i
 .PHONY : percystats.cc.i
 
 percystats.s: percystats.cc.s
@@ -554,7 +926,13 @@ percystats.s: percystats.cc.s
 
 # target to generate assembly for a file
 percystats.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/percystats.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/percystats.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/percystats.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/percystats.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/percystats.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/percystats.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/percystats.cc.s
 .PHONY : percystats.cc.s
 
 pirclient.o: pirclient.cc.o
@@ -563,7 +941,7 @@ pirclient.o: pirclient.cc.o
 
 # target to build an object file
 pirclient.cc.o:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/pirclient.cc.o
 .PHONY : pirclient.cc.o
 
 pirclient.i: pirclient.cc.i
@@ -572,7 +950,7 @@ pirclient.i: pirclient.cc.i
 
 # target to preprocess a source file
 pirclient.cc.i:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/pirclient.cc.i
 .PHONY : pirclient.cc.i
 
 pirclient.s: pirclient.cc.s
@@ -581,7 +959,7 @@ pirclient.s: pirclient.cc.s
 
 # target to generate assembly for a file
 pirclient.cc.s:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/pirclient.cc.s
 .PHONY : pirclient.cc.s
 
 pirclient_ag.o: pirclient_ag.cc.o
@@ -590,7 +968,7 @@ pirclient_ag.o: pirclient_ag.cc.o
 
 # target to build an object file
 pirclient_ag.cc.o:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/pirclient_ag.cc.o
 .PHONY : pirclient_ag.cc.o
 
 pirclient_ag.i: pirclient_ag.cc.i
@@ -599,7 +977,7 @@ pirclient_ag.i: pirclient_ag.cc.i
 
 # target to preprocess a source file
 pirclient_ag.cc.i:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/pirclient_ag.cc.i
 .PHONY : pirclient_ag.cc.i
 
 pirclient_ag.s: pirclient_ag.cc.s
@@ -608,7 +986,7 @@ pirclient_ag.s: pirclient_ag.cc.s
 
 # target to generate assembly for a file
 pirclient_ag.cc.s:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_ag.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/pirclient_ag.cc.s
 .PHONY : pirclient_ag.cc.s
 
 pirclient_hybrid.o: pirclient_hybrid.cc.o
@@ -617,7 +995,7 @@ pirclient_hybrid.o: pirclient_hybrid.cc.o
 
 # target to build an object file
 pirclient_hybrid.cc.o:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/pirclient_hybrid.cc.o
 .PHONY : pirclient_hybrid.cc.o
 
 pirclient_hybrid.i: pirclient_hybrid.cc.i
@@ -626,7 +1004,7 @@ pirclient_hybrid.i: pirclient_hybrid.cc.i
 
 # target to preprocess a source file
 pirclient_hybrid.cc.i:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/pirclient_hybrid.cc.i
 .PHONY : pirclient_hybrid.cc.i
 
 pirclient_hybrid.s: pirclient_hybrid.cc.s
@@ -635,7 +1013,7 @@ pirclient_hybrid.s: pirclient_hybrid.cc.s
 
 # target to generate assembly for a file
 pirclient_hybrid.cc.s:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirclient_hybrid.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/pirclient_hybrid.cc.s
 .PHONY : pirclient_hybrid.cc.s
 
 pirserver.o: pirserver.cc.o
@@ -644,7 +1022,7 @@ pirserver.o: pirserver.cc.o
 
 # target to build an object file
 pirserver.cc.o:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/pirserver.cc.o
 .PHONY : pirserver.cc.o
 
 pirserver.i: pirserver.cc.i
@@ -653,7 +1031,7 @@ pirserver.i: pirserver.cc.i
 
 # target to preprocess a source file
 pirserver.cc.i:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/pirserver.cc.i
 .PHONY : pirserver.cc.i
 
 pirserver.s: pirserver.cc.s
@@ -662,7 +1040,7 @@ pirserver.s: pirserver.cc.s
 
 # target to generate assembly for a file
 pirserver.cc.s:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/pirserver.cc.s
 .PHONY : pirserver.cc.s
 
 pirserver_ag.o: pirserver_ag.cc.o
@@ -671,7 +1049,7 @@ pirserver_ag.o: pirserver_ag.cc.o
 
 # target to build an object file
 pirserver_ag.cc.o:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/pirserver_ag.cc.o
 .PHONY : pirserver_ag.cc.o
 
 pirserver_ag.i: pirserver_ag.cc.i
@@ -680,7 +1058,7 @@ pirserver_ag.i: pirserver_ag.cc.i
 
 # target to preprocess a source file
 pirserver_ag.cc.i:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/pirserver_ag.cc.i
 .PHONY : pirserver_ag.cc.i
 
 pirserver_ag.s: pirserver_ag.cc.s
@@ -689,7 +1067,7 @@ pirserver_ag.s: pirserver_ag.cc.s
 
 # target to generate assembly for a file
 pirserver_ag.cc.s:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_ag.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/pirserver_ag.cc.s
 .PHONY : pirserver_ag.cc.s
 
 pirserver_hybrid.o: pirserver_hybrid.cc.o
@@ -698,7 +1076,7 @@ pirserver_hybrid.o: pirserver_hybrid.cc.o
 
 # target to build an object file
 pirserver_hybrid.cc.o:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/pirserver_hybrid.cc.o
 .PHONY : pirserver_hybrid.cc.o
 
 pirserver_hybrid.i: pirserver_hybrid.cc.i
@@ -707,7 +1085,7 @@ pirserver_hybrid.i: pirserver_hybrid.cc.i
 
 # target to preprocess a source file
 pirserver_hybrid.cc.i:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/pirserver_hybrid.cc.i
 .PHONY : pirserver_hybrid.cc.i
 
 pirserver_hybrid.s: pirserver_hybrid.cc.s
@@ -716,7 +1094,7 @@ pirserver_hybrid.s: pirserver_hybrid.cc.s
 
 # target to generate assembly for a file
 pirserver_hybrid.cc.s:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/pirserver_hybrid.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/pirserver_hybrid.cc.s
 .PHONY : pirserver_hybrid.cc.s
 
 portfolio.o: portfolio.cc.o
@@ -725,7 +1103,13 @@ portfolio.o: portfolio.cc.o
 
 # target to build an object file
 portfolio.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/portfolio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/portfolio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/portfolio.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/portfolio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/portfolio.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/portfolio.cc.o
 .PHONY : portfolio.cc.o
 
 portfolio.i: portfolio.cc.i
@@ -734,7 +1118,13 @@ portfolio.i: portfolio.cc.i
 
 # target to preprocess a source file
 portfolio.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/portfolio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/portfolio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/portfolio.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/portfolio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/portfolio.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/portfolio.cc.i
 .PHONY : portfolio.cc.i
 
 portfolio.s: portfolio.cc.s
@@ -743,7 +1133,13 @@ portfolio.s: portfolio.cc.s
 
 # target to generate assembly for a file
 portfolio.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/portfolio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/portfolio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/portfolio.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/portfolio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/portfolio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/portfolio.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/portfolio.cc.s
 .PHONY : portfolio.cc.s
 
 recover.o: recover.cc.o
@@ -752,7 +1148,13 @@ recover.o: recover.cc.o
 
 # target to build an object file
 recover.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recover.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recover.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recover.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recover.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recover.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recover.cc.o
 .PHONY : recover.cc.o
 
 recover.i: recover.cc.i
@@ -761,7 +1163,13 @@ recover.i: recover.cc.i
 
 # target to preprocess a source file
 recover.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recover.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recover.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recover.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recover.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recover.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recover.cc.i
 .PHONY : recover.cc.i
 
 recover.s: recover.cc.s
@@ -770,7 +1178,13 @@ recover.s: recover.cc.s
 
 # target to generate assembly for a file
 recover.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recover.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recover.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recover.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recover.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recover.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recover.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recover.cc.s
 .PHONY : recover.cc.s
 
 recursiveclient.o: recursiveclient.cc.o
@@ -779,7 +1193,13 @@ recursiveclient.o: recursiveclient.cc.o
 
 # target to build an object file
 recursiveclient.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recursiveclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recursiveclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recursiveclient.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recursiveclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recursiveclient.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recursiveclient.cc.o
 .PHONY : recursiveclient.cc.o
 
 recursiveclient.i: recursiveclient.cc.i
@@ -788,7 +1208,13 @@ recursiveclient.i: recursiveclient.cc.i
 
 # target to preprocess a source file
 recursiveclient.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recursiveclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recursiveclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recursiveclient.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recursiveclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recursiveclient.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recursiveclient.cc.i
 .PHONY : recursiveclient.cc.i
 
 recursiveclient.s: recursiveclient.cc.s
@@ -797,7 +1223,13 @@ recursiveclient.s: recursiveclient.cc.s
 
 # target to generate assembly for a file
 recursiveclient.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recursiveclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recursiveclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recursiveclient.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recursiveclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recursiveclient.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recursiveclient.cc.s
 .PHONY : recursiveclient.cc.s
 
 recursiveparams.o: recursiveparams.cc.o
@@ -806,7 +1238,13 @@ recursiveparams.o: recursiveparams.cc.o
 
 # target to build an object file
 recursiveparams.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recursiveparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recursiveparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recursiveparams.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recursiveparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recursiveparams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recursiveparams.cc.o
 .PHONY : recursiveparams.cc.o
 
 recursiveparams.i: recursiveparams.cc.i
@@ -815,7 +1253,13 @@ recursiveparams.i: recursiveparams.cc.i
 
 # target to preprocess a source file
 recursiveparams.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recursiveparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recursiveparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recursiveparams.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recursiveparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recursiveparams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recursiveparams.cc.i
 .PHONY : recursiveparams.cc.i
 
 recursiveparams.s: recursiveparams.cc.s
@@ -824,7 +1268,13 @@ recursiveparams.s: recursiveparams.cc.s
 
 # target to generate assembly for a file
 recursiveparams.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recursiveparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recursiveparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recursiveparams.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recursiveparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recursiveparams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recursiveparams.cc.s
 .PHONY : recursiveparams.cc.s
 
 recursiveserver.o: recursiveserver.cc.o
@@ -833,7 +1283,13 @@ recursiveserver.o: recursiveserver.cc.o
 
 # target to build an object file
 recursiveserver.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recursiveserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recursiveserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recursiveserver.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recursiveserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recursiveserver.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recursiveserver.cc.o
 .PHONY : recursiveserver.cc.o
 
 recursiveserver.i: recursiveserver.cc.i
@@ -842,7 +1298,13 @@ recursiveserver.i: recursiveserver.cc.i
 
 # target to preprocess a source file
 recursiveserver.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recursiveserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recursiveserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recursiveserver.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recursiveserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recursiveserver.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recursiveserver.cc.i
 .PHONY : recursiveserver.cc.i
 
 recursiveserver.s: recursiveserver.cc.s
@@ -851,7 +1313,13 @@ recursiveserver.s: recursiveserver.cc.s
 
 # target to generate assembly for a file
 recursiveserver.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/recursiveserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/recursiveserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/recursiveserver.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/recursiveserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/recursiveserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/recursiveserver.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/recursiveserver.cc.s
 .PHONY : recursiveserver.cc.s
 
 rsdecoder.o: rsdecoder.cc.o
@@ -860,7 +1328,13 @@ rsdecoder.o: rsdecoder.cc.o
 
 # target to build an object file
 rsdecoder.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/rsdecoder.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/rsdecoder.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/rsdecoder.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/rsdecoder.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/rsdecoder.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/rsdecoder.cc.o
 .PHONY : rsdecoder.cc.o
 
 rsdecoder.i: rsdecoder.cc.i
@@ -869,7 +1343,13 @@ rsdecoder.i: rsdecoder.cc.i
 
 # target to preprocess a source file
 rsdecoder.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/rsdecoder.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/rsdecoder.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/rsdecoder.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/rsdecoder.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/rsdecoder.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/rsdecoder.cc.i
 .PHONY : rsdecoder.cc.i
 
 rsdecoder.s: rsdecoder.cc.s
@@ -878,35 +1358,14 @@ rsdecoder.s: rsdecoder.cc.s
 
 # target to generate assembly for a file
 rsdecoder.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/rsdecoder.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/rsdecoder.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/rsdecoder.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/rsdecoder.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/rsdecoder.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/rsdecoder.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/rsdecoder.cc.s
 .PHONY : rsdecoder.cc.s
-
-splitdatabase.o: splitdatabase.cc.o
-
-.PHONY : splitdatabase.o
-
-# target to build an object file
-splitdatabase.cc.o:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.o
-.PHONY : splitdatabase.cc.o
-
-splitdatabase.i: splitdatabase.cc.i
-
-.PHONY : splitdatabase.i
-
-# target to preprocess a source file
-splitdatabase.cc.i:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.i
-.PHONY : splitdatabase.cc.i
-
-splitdatabase.s: splitdatabase.cc.s
-
-.PHONY : splitdatabase.s
-
-# target to generate assembly for a file
-splitdatabase.cc.s:
-	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/splitdatabase.cc.s
-.PHONY : splitdatabase.cc.s
 
 streams.o: streams.cc.o
 
@@ -914,7 +1373,13 @@ streams.o: streams.cc.o
 
 # target to build an object file
 streams.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/streams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/streams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/streams.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/streams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/streams.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/streams.cc.o
 .PHONY : streams.cc.o
 
 streams.i: streams.cc.i
@@ -923,7 +1388,13 @@ streams.i: streams.cc.i
 
 # target to preprocess a source file
 streams.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/streams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/streams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/streams.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/streams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/streams.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/streams.cc.i
 .PHONY : streams.cc.i
 
 streams.s: streams.cc.s
@@ -932,7 +1403,13 @@ streams.s: streams.cc.s
 
 # target to generate assembly for a file
 streams.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/streams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/streams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/streams.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/streams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/streams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/streams.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/streams.cc.s
 .PHONY : streams.cc.s
 
 subset.o: subset.cc.o
@@ -941,7 +1418,13 @@ subset.o: subset.cc.o
 
 # target to build an object file
 subset.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/subset.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/subset.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/subset.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/subset.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/subset.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/subset.cc.o
 .PHONY : subset.cc.o
 
 subset.i: subset.cc.i
@@ -950,7 +1433,13 @@ subset.i: subset.cc.i
 
 # target to preprocess a source file
 subset.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/subset.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/subset.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/subset.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/subset.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/subset.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/subset.cc.i
 .PHONY : subset.cc.i
 
 subset.s: subset.cc.s
@@ -959,7 +1448,13 @@ subset.s: subset.cc.s
 
 # target to generate assembly for a file
 subset.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/subset.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/subset.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/subset.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/subset.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/subset.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/subset.cc.s
 .PHONY : subset.cc.s
 
 subset_iter.o: subset_iter.cc.o
@@ -968,7 +1463,13 @@ subset_iter.o: subset_iter.cc.o
 
 # target to build an object file
 subset_iter.cc.o:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/subset_iter.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/subset_iter.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/subset_iter.cc.o
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/subset_iter.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/subset_iter.cc.o
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/subset_iter.cc.o
 .PHONY : subset_iter.cc.o
 
 subset_iter.i: subset_iter.cc.i
@@ -977,7 +1478,13 @@ subset_iter.i: subset_iter.cc.i
 
 # target to preprocess a source file
 subset_iter.cc.i:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/subset_iter.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/subset_iter.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/subset_iter.cc.i
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/subset_iter.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/subset_iter.cc.i
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/subset_iter.cc.i
 .PHONY : subset_iter.cc.i
 
 subset_iter.s: subset_iter.cc.s
@@ -986,7 +1493,13 @@ subset_iter.s: subset_iter.cc.s
 
 # target to generate assembly for a file
 subset_iter.cc.s:
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridserver.dir/subset_iter.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/hybridclient.dir/subset_iter.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agserver.dir/subset_iter.cc.s
 	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/percy.dir/subset_iter.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/agclient.dir/subset_iter.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirclient.dir/subset_iter.cc.s
+	cd /home/hadi/Projects/PIR/pypercy/build && $(MAKE) -f /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/build.make /home/hadi/Projects/PIR/pypercy/percy/CMakeFiles/pirserver.dir/subset_iter.cc.s
 .PHONY : subset_iter.cc.s
 
 # Help Target
@@ -996,8 +1509,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... hybridserver"
+	@echo "... hybridclient"
 	@echo "... rebuild_cache"
+	@echo "... agserver"
 	@echo "... percy"
+	@echo "... agclient"
+	@echo "... pirclient"
+	@echo "... pirserver"
 	@echo "... FXY.o"
 	@echo "... FXY.i"
 	@echo "... FXY.s"
@@ -1082,9 +1601,6 @@ help:
 	@echo "... rsdecoder.o"
 	@echo "... rsdecoder.i"
 	@echo "... rsdecoder.s"
-	@echo "... splitdatabase.o"
-	@echo "... splitdatabase.i"
-	@echo "... splitdatabase.s"
 	@echo "... streams.o"
 	@echo "... streams.i"
 	@echo "... streams.s"

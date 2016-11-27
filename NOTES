@@ -1,0 +1,5 @@
+
+
+CHANGES TO percy
+Made changes to percyclient.h and percyclient.cc
+add function calculate_h which needed private members of the PercyClient class
