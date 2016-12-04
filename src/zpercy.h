@@ -18,25 +18,29 @@ struct membuf : std::streambuf
 };
 
 class ZPercyClient  {
-protected:
-    friend class PercyClient;
+public:
     PercyClient* client;
 
     const PercyParams* zparams;
     const PercyClientParams* zclientparams;
 
-    std::stringstream request_buffer;
-    std::stringstream response_buffer;
+    std::vector<std::stringstream*> request_buffers;
+    std::vector<std::stringstream*> response_buffers;
+    std::stringstream result_buffer;
     nqueries_t request_id;
+    nservers_t num_servers;
 
 public:
-    ZPercyClient(PercyClient* client);
+    ZPercyClient(PercyClient* client, nservers_t num_servers);
+    ~ZPercyClient();
     virtual nqueries_t make_request(dbsize_t block);
-    int read_request(char* buf, int chunk_size);
+    int read_request(nservers_t sid, char* buf, int chunk_size);
 
-    virtual void parse_response(nqueries_t req_id, std::istream& resp_stream);
-    virtual void parse_response(std::istream& resp_stream);
-    int read_response(char* buf, int chunk_size);
+    void write_response(nservers_t sid, char* buf, int chunk_size);
+
+    virtual void parse_response(nqueries_t req_id);
+    virtual void parse_response();
+    int read_result(char* buf, int chunk_size);
 };
 
 class ZPercyServer {
@@ -54,12 +58,17 @@ public:
 extern "C" {
     // TODO Consider virtual block size
     nqueries_t client_make_request(ZPercyClient* self, dbsize_t block);
-    int client_read_request(ZPercyClient* self, char* buf, int chunk_size);
-    void client_parse_response(ZPercyClient* self, int req_id, char* raw_response, int length);
-    int client_read_response(ZPercyClient* self, char* buf, int chunk_size);
+    int client_read_request(ZPercyClient* self, nservers_t sid, char* buf, int chunk_size);
+    void client_write_response(ZPercyClient* self, nservers_t sid, char* buf, int chunk_size);
+    void client_parse_response(ZPercyClient* self, int req_id);
+    int client_read_result(ZPercyClient* self, char* buf, int chunk_size);
 
 
     void server_process_request(ZPercyServer* self, char* request, int request_length);
     int server_read_response(ZPercyServer* self, char* buf, int chunk_size);
+
+    char* get_err();
 }
+
+extern std::stringstream errstream;
 #endif

@@ -12,7 +12,7 @@ include_directories(/home/hadi/Projects/PIR/percy/ntl/include/NTL)
 
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../percy ${CMAKE_CURRENT_BINARY_DIR}/../percy)
-add_library(pypercy SHARED client.cc server.cc ag.cc itzzp_client.cc itzzp_server.cc)
+add_library(pypercy SHARED client.cc server.cc err.cc ag.cc itzzp_client.cc itzzp_server.cc)
 
 target_compile_options(pypercy PRIVATE -fPIC)
 target_link_libraries(pypercy percy)

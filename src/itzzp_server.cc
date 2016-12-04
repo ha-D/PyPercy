@@ -1,8 +1,11 @@
 #include "itzzp.h"
 
-#include <signal.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+
+#include <sstream>
+
+// stringstream errstream;
 
 // Get the database size.  Returns 0 if the database does not exist.
 dbsize_t database_bytes (const char * database) {
@@ -10,16 +13,17 @@ dbsize_t database_bytes (const char * database) {
     int not_exists = stat(database, &filestatus);
     if (not_exists)
     {
-	std::cerr << "Error: cannot find database file " << database << std::endl;
+	errstream << "Error: cannot find database file " << database << std::endl;
 	return 0;
     }
     return filestatus.st_size;
 }
 
-int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsize_t block_size)
+int _main (char* database, nservers_t sid, dbsize_t num_blocks, dbsize_t block_size, dbsize_t w, PercyServer* &percy_server)
 {
-    // Ignore SIGPIPE
-    signal(SIGPIPE, SIG_IGN);
+    // HADI: CAN REMOVE
+    // // Ignore SIGPIPE
+    // signal(SIGPIPE, SIG_IGN);
 
     // Initialize NTL and the random number stream
     ZZ modinit;
@@ -95,10 +99,10 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 
     // HADI: CAN REMOVE
     // Cannot be a master and a worker
-    if (is_master && is_worker) {
-	fprintf(stderr, "Cannot be a master and a worker");
-	print_usage(argv[0], -1);
-    }
+    // if (is_master && is_worker) {
+	// fprintf(stderr, "Cannot be a master and a worker");
+	// print_usage(argv[0], -1);
+    // }
 
     // HADI: CAN REMOVE
     // Get required arguments
@@ -137,26 +141,26 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 
     // Sanity checks
     if (do_hybrid && (mode != MODE_ZZ_P)) {
-        fprintf(stderr, "Error: hybrid security can only be used with the integers mod p mode of operation.\n");
+        errstream <<  "Error: hybrid security can only be used with the integers mod p mode of operation.\n";
 	return -1;
     }
 #ifdef SPIR_SUPPORT
     if (do_hybrid && do_spir) {
-        fprintf(stderr, "Error: cannot use hybrid security with symmetric PIR.\n");
+        errstream <<  "Error: cannot use hybrid security with symmetric PIR.\n";
 	return -1;
     }
     if (do_spir && mode != MODE_ZZ_P) {
-        fprintf(stderr, "Error: symmetric PIR can only be used with the integers mod p mode of operation.\n");
+        errstream << "Error: symmetric PIR can only be used with the integers mod p mode of operation.\n";
 	return -1;
     }
 #endif
     if (is_tau && mode == MODE_CHOR) {
-        fprintf(stderr, "Error: Chor et al.'s PIR scheme does not support tau independence.\n");
+        errstream << "Error: Chor et al.'s PIR scheme does not support tau independence.\n";
 	return -1;
     }
     if (strassen_set && mode != MODE_ZZ_P && mode != MODE_GF28 &&
 	    mode != MODE_GF216) {
-        fprintf(stderr, "Strassen is only implemented for GF28, GF216 and ZZ_p.\n");
+        errstream <<  "Strassen is only implemented for GF28, GF216 and ZZ_p.\n";
 	return -1;
     }
 
@@ -178,7 +182,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	break;
     }
     if (badw) {
-	std::cerr << "Invalid word size for mode " << mode << ": " << w << "\n";
+	errstream << "Invalid word size for mode " << mode << ": " << w << "\n";
 	return 1;
     }
 
@@ -233,19 +237,19 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	    badw = do_hybrid;
 	    break;
 	default:
-	    std::cerr << "Error: No modulus available for w = " << w << "." << std::endl;
+	    errstream<< "Error: No modulus available for w = " << w << "." << std::endl;
 	    return -1;
 	}
 
 	if (badw) {
-	    std::cerr << "Error: No hybrid-compatible modulus available for w = " << w << "." << std::endl;
+	    errstream << "Error: No hybrid-compatible modulus available for w = " << w << "." << std::endl;
 	    return -1;
 	}
 
 #ifdef SPIR_SUPPORT
 	if (do_spir && w!=160)
 	{
-	    fprintf(stderr, "Error: symmetric PIR currently supports only w=160.\n");
+	    errstream <<  "Error: symmetric PIR currently supports only w=160.\n";
 	    return -1;
 	}
 #endif
@@ -264,53 +268,54 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	}
 	num_workers = workerstr.size();
 	if (num_workers < 1) {
-	    std::cerr << "The number of workers must be at least 1\n";
+	    errstream << "The number of workers must be at least 1\n";
 	    for (unsigned i = 0; i < workers.size(); ++i)
 		if (workers[i]) delete workers[i];
 	    return -1;
 	}
 
+    // HADI: CAN REMOVE as long as we don't want workers
 	// Create worker iostreams
-	for (dbsize_t i = 0; i < num_workers; ++i) {
-	    char * sidchar = strtok(workerstr[i], ":");
-	    char * addrchar = strtok(NULL, ":");
-	    char * portchar = strtok(NULL, ":");
-	    if (addrchar == NULL || portchar == NULL || portchar == NULL) {
-		fprintf(stderr, "Error: worker information was incorrectly formatted.\n");
-		for (unsigned i = 0; i < workers.size(); ++i)
-		    if (workers[i]) delete workers[i];
-		return -1;
-	    }
-	    nservers_t sidnum = strtoul(sidchar, NULL, 10);
-	    if (!sidnum || sidnum > modulus) {
-		std::cerr << "Error: SID must be an integer greater than 0 and less than " << modulus << ".\n";
-		for (unsigned i = 0; i < workers.size(); ++i)
-		    if (workers[i]) delete workers[i];
-		return -1;
-	    }
-	    worker_sids.push_back(sidnum);
-	    unsigned long portnum = strtoul(portchar, NULL, 10);
-	    if (portnum < 1024 || portnum > 65535) {
-		fprintf(stderr, "Error: port number must be an integer greater than 1024 and less than 65535.\n");
-		for (unsigned i = 0; i < workers.size(); ++i)
-		    if (workers[i]) delete workers[i];
-		return -1;
-	    }
-	    // connect_to_server function is located in distserver.{h,cc}
-	    iosockinet * socket = connect_to_server(addrchar, portnum);
-	    if (socket == NULL) {
-		std::cerr << "Error: cannot connect to worker " << i << ": " << workerstr[i] << ".\n";
-		for (unsigned i = 0; i < workers.size(); ++i)
-		    if (workers[i]) delete workers[i];
-		return -1;
-	    }
-	    std::iostream * stream = socket;
-	    workers.push_back(stream);
-	}
+	// for (dbsize_t i = 0; i < num_workers; ++i) {
+	//     char * sidchar = strtok(workerstr[i], ":");
+	//     char * addrchar = strtok(NULL, ":");
+	//     char * portchar = strtok(NULL, ":");
+	//     if (addrchar == NULL || portchar == NULL || portchar == NULL) {
+	// 	fprintf(stderr, "Error: worker information was incorrectly formatted.\n");
+	// 	for (unsigned i = 0; i < workers.size(); ++i)
+	// 	    if (workers[i]) delete workers[i];
+	// 	return -1;
+	//     }
+	//     nservers_t sidnum = strtoul(sidchar, NULL, 10);
+	//     if (!sidnum || sidnum > modulus) {
+	// 	std::cerr << "Error: SID must be an integer greater than 0 and less than " << modulus << ".\n";
+	// 	for (unsigned i = 0; i < workers.size(); ++i)
+	// 	    if (workers[i]) delete workers[i];
+	// 	return -1;
+	//     }
+	//     worker_sids.push_back(sidnum);
+	//     unsigned long portnum = strtoul(portchar, NULL, 10);
+	//     if (portnum < 1024 || portnum > 65535) {
+	// 	fprintf(stderr, "Error: port number must be an integer greater than 1024 and less than 65535.\n");
+	// 	for (unsigned i = 0; i < workers.size(); ++i)
+	// 	    if (workers[i]) delete workers[i];
+	// 	return -1;
+	//     }
+	//     // connect_to_server function is located in distserver.{h,cc}
+	//     iosockinet * socket = connect_to_server(addrchar, portnum);
+	//     if (socket == NULL) {
+	// 	std::cerr << "Error: cannot connect to worker " << i << ": " << workerstr[i] << ".\n";
+	// 	for (unsigned i = 0; i < workers.size(); ++i)
+	// 	    if (workers[i]) delete workers[i];
+	// 	return -1;
+	//     }
+	//     std::iostream * stream = socket;
+	//     workers.push_back(stream);
+	// }
 
 	// database size must be specified
 	if (!n_bytes) {
-	    fprintf(stderr, "Error: Database size (n) must be specified.\n");
+	    errstream << "Error: Database size (n) must be specified.\n";
 	    for (unsigned i = 0; i < workers.size(); ++i)
 		if (workers[i]) delete workers[i];
 	    return -1;
@@ -320,7 +325,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	// Make sure the specified database file exists.
 	dbsize = database_bytes(database);
 	if (dbsize == 0) {
-	    fprintf(stderr, "Error: the database must exist and be non-empty.\n");
+	    errstream << "Error: the database must exist and be non-empty.\n";
 	    return -1;
 	}
 
@@ -329,7 +334,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	if (!n_bytes) {
 	    n_bytes = dbsize;
 	} else if (!(is_worker && is_partial_database) && n_bytes > dbsize) {
-	    fprintf(stderr, "Error: n cannot be larger than database file.\n");
+	    errstream << "Error: n cannot be larger than database file.\n";
 	    return -1;
 	}
 
@@ -340,7 +345,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 
     dbbits_t n = n_bytes * 8;
     if (n_bytes > n) {
-        fprintf(stderr, "Error: database file is too large for the current architecture!\n");
+        errstream <<  "Error: database file is too large for the current architecture!\n";
 	for (unsigned i = 0; i < workers.size(); ++i)
 	    if (workers[i]) delete workers[i];
 	return -1;
@@ -352,7 +357,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
         b = sqrt(n * w);
         if (n != b*b/w)
         {
-            fprintf(stderr, "Error: optimal parameter choice is invalid for this database. Please specify a value for both of b and w.\n");
+            errstream << "Error: optimal parameter choice is invalid for this database. Please specify a value for both of b and w.\n";
 	    for (unsigned i = 0; i < workers.size(); ++i)
 		if (workers[i]) delete workers[i];
 	    return -1;
@@ -362,7 +367,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
     // Sanity checks for (n,b,w).
     if (n % b != 0 || b % w != 0)
     {
-        fprintf(stderr, "Error: b must divide n and w must divide b.\n");
+        errstream  << "Error: b must divide n and w must divide b. " << "n: " << n << " b: " << b << " w: " << w << std::endl;
 	for (unsigned i = 0; i < workers.size(); ++i)
 	    if (workers[i]) delete workers[i];
 	return -1;
@@ -394,13 +399,13 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	params = new GF2EParams(num_blocks, block_size, w, is_tau);
 	break;
     default:
-	std::cerr << "Invalid mode: " << mode << "\n";
+	errstream<< "Invalid mode: " << mode << "\n";
 	for (unsigned i = 0; i < workers.size(); ++i)
 	    if (workers[i]) delete workers[i];
 	return -1;
     }
     if (!params) {
-	std::cerr << "Error creating parameters object\n";
+	errstream << "Error creating parameters object\n";
 	for (unsigned i = 0; i < workers.size(); ++i)
 	    if (workers[i]) delete workers[i];
 	return -1;
@@ -426,7 +431,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	for (nservers_t i = 0; i < num_workers; ++i) {
 	    workers[i]->read((char*)&failure, 1);
 	    if (failure) {
-		std::cerr << "Worker " << i << " did not accept parameters\n";
+		errstream << "Worker " << i << " did not accept parameters\n";
 		delete serverparams;
 		delete params;
 		for (unsigned i = 0; i < workers.size(); ++i)
@@ -443,7 +448,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	    const PercyParams * wparams = serverparams->get_worker_params(worker_index);
 	    const PercyServerParams * wsparams = serverparams->get_worker_serverparams(worker_index);
 	    if (wparams->num_blocks() * wparams->block_size() > dbsize) {
-		std::cerr << "Error: The partial database is not large enough!\n";
+		errstream << "Error: The partial database is not large enough!\n";
 		delete serverparams;
 		delete params;
 		for (unsigned i = 0; i < workers.size(); ++i)
@@ -455,7 +460,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	    datastore = new FileDataStore(database, serverparams, offset);
 	}
 	if (!datastore) {
-	    std::cerr << "Error creating datastore\n";
+	    errstream << "Error creating datastore\n";
 	    delete serverparams;
 	    delete params;
 	    for (unsigned i = 0; i < workers.size(); ++i)
@@ -514,7 +519,7 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	    delete params;
 	    for (unsigned i = 0; i < workers.size(); ++i)
 		if (workers[i]) delete workers[i];
-	    fprintf(stderr, "Error creating stats object\n");
+	    errstream <<  "Error creating stats object\n";
 	    return -1;
 	}
     }
@@ -528,11 +533,14 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 	delete params;
 	for (unsigned i = 0; i < workers.size(); ++i)
 	    if (workers[i]) delete workers[i];
-	fprintf(stderr, "Server not created successfully\n");
+	errstream <<  "Server not created successfully\n";
 	return -1;
     }
 
     server->set_strassen_max_depth(strassen_max_depth);
+
+    // HADI
+    percy_server = server;
 
     // Clean up
     // delete server;
@@ -547,77 +555,20 @@ int _main (dbsize_t w, char* database, nservers_t sid, dbsize_t num_blocks, dbsi
 }
 
 
-ZZ zzp_server_modulus(dbsize_t w) {
-   ZZ modulus = to_ZZ("256");
-   switch (w) {
-       case 2048:
-           modulus = to_ZZ("51162405833378812589599605953260132300166393994651819099454781579567509212081792013783783759303440508155949594262147212874957344953142209597742684263402581129339826752613431877280173074502314648334418584122460414512816448592261381117519846844295394134225624418756277265452922709245846828145574822031541004633366879073894273715489429502290966133193310966178373909137394353164436844312924586836474134940807305776164928781025210917912257206480517698118422827367766257579221703667784216949825206167241852365543481875593117676222875888924950402025039269210778276794873837063438751454865130720887819939394489366347567251243");
-           break;
-       case 1536:
-           modulus = to_ZZ("4065256781338999183533854850423382625119065920051798531476300569026463202897155088318466013703570859212040475097762405522038651420119366364979939687154236065682459920101982590074846996306687236388206057475890613264408059472973401701686869808348910896596468985609043697525749128687318350246421674945679872669881805678484464202726328189280359385791023305618545788872763420795247846720674554774196715770302797683129209164871258189464484019233379849839076263862630987");
-           break;
-       case 1024:
-           modulus = to_ZZ("343308946066366926839932845260501528909643718159825813630709694160026342456154871924497152436552679706642965502704642456637620829912957820221098686748075257358288200837461739492534713539606088624083011849535450485951774635526473457667739540374042376629835941950802202870595346459371144019363420985729553740241");
-           break;
-       case 256:
-           modulus = to_ZZ("115792089237316195423570985008687907853269984665640564039457584007913129640233");
-           break;
-       case 192:
-           modulus = to_ZZ("6277101735386680763835789423207666416102355444464034513029");
-           break;
-       case 160:
-           // NOTE: p2s is the prime from the PolyCommit params; spir
-           // will break if this value gets changed!
-           //
-           // TODO: read the prime from the PolyCommit params and check
-           //          that it is consistent with w.
-           modulus = to_ZZ("2425980306017163398341728799446792216592523285797");
-           break;
-       case 128:
-           modulus = to_ZZ("340282366920938463463374607431768211507");
-           break;
-       case 96:
-           modulus = to_ZZ("79228162514264337593543950397");
-           break;
-       case 32:
-           modulus = to_ZZ("4294967311");
-           break;
-       case 16:
-           modulus = to_ZZ("65537");
-           break;
-       case 8:
-           modulus = to_ZZ("257");
-           break;
-       default:
-           std::cerr << "Error: No modulus available for w = " << w << "." << std::endl;
-           return to_ZZ("256");
+
+ZPercyServer* server_zzp_new(char* dbfile, dbsize_t num_blocks, dbsize_t block_size,
+                           dbsize_t w ) {
+    PercyServer* percy_server = NULL;
+
+    // Giving all sid 1 for now
+    int result = _main(dbfile, 1, num_blocks, block_size, w, percy_server);
+    if (!result) {
+        ZPercyServer* server = new ZPercyServer(percy_server);
+        return server;
+    } else {
+        // strcpy(error_message, errstream.str().c_str());
+        // errstream.str(std::string());
+        // errstream.clear();
+        return NULL;
     }
-    return modulus;
-}
-
-
-ZPercyServer* server_zzp_new(char* dbfile, int db_offset, dbsize_t num_blocks, dbsize_t block_size,
-                           dbsize_t word_size, nservers_t tau, bool spir) {
-    bool is_null = false;
-    sid_t sid = 1;
-    int num_threads = 1;
-    int num_workers = 0;
-    std::vector<nservers_t> worker_sids = std::vector<nservers_t>(num_workers, sid);
-    bool is_forked = true;
-    bool be_byzantine = false;
-    ZZ modulus = zzp_server_modulus(word_size);
-
-    PercyParams * params =  new ZZ_pParams(num_blocks, block_size, word_size, modulus, tau, NULL, spir);
-    PercyServerParams * serverparams =
-            new PercyServerParams(params, sid,
-                                    num_threads, DIST_SPLIT_RECORDS, num_workers, DIST_SPLIT_RECORDS,
-                                    worker_sids, is_forked,
-                                    be_byzantine);
-
-    DataStore* datastore = new FileDataStore(dbfile, serverparams, db_offset);
-
-    PercyServer* percy_server = new PercyServer_ZZ_p(datastore, serverparams);
-    ZPercyServer* server = new ZPercyServer(percy_server);
-
-    return server;
 }

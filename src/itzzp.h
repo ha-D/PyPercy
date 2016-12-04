@@ -15,9 +15,9 @@
 extern "C" {
     ZZ zzp_server_modulus(dbsize_t w);
     ZZ* zzp_client_modulus(dbsize_t w);
-    ZPercyServer* server_zzp_new(char* dbfile, int db_offset, dbsize_t num_blocks, dbsize_t block_size,
-                               dbsize_t word_size, nservers_t tau, bool spir);
-    ZPercyClient* client_zzp_new(nservers_t num_servers, nservers_t t, dbsize_t num_blocks, dbsize_t block_size,
-                              dbsize_t word_size, nservers_t tau, bool spir);
+    ZPercyServer* server_zzp_new(char* dbfile, dbsize_t num_blocks, dbsize_t block_size,
+                               dbsize_t w);
+    ZPercyClient* client_zzp_new(dbsize_t num_blocks, dbsize_t block_size,
+                              dbsize_t w, nservers_t num_servers, nservers_t t);
 }
 #endif
