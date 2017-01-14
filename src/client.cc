@@ -24,11 +24,11 @@ ZPercyClient::~ZPercyClient() {
     }
 }
 
-nqueries_t ZPercyClient::make_request(dbsize_t block) {
+nqueries_t ZPercyClient::make_request(std::vector<dbsize_t> blocks) {
 
     nqueries_t querybsize = 1;
 
-    std::vector<dbsize_t> blocks (1, block);
+    //std::vector<dbsize_t> blocks (1, block);
     nqueries_t request_identifier = client->encode_request(blocks, querybsize);
 
     // Clear buffer before new request
@@ -86,11 +86,22 @@ void ZPercyClient::parse_response(nqueries_t req_id) {
     bool res =  client->get_result(req_id, results);
 //    return res;
 
-    this->result_buffer.str( std::string() );
-    this->result_buffer.clear();
-
     bool ret = true;
     nqueries_t num_res = results.size();
+
+
+    // Delete previously existing result buffers (here a good place?)
+    for (int i = 0; i < this->result_buffers.size(); i++) {
+        delete this->result_buffers[i];
+    }
+    this->result_buffers.clear();
+    
+    // Create new result buffers
+    for (int i = 0; i < num_res; i++) {
+        this->result_buffers.push_back(new std::stringstream());
+    }
+
+
     for (nqueries_t r=0; ret && r < num_res; ++r) {
         if (results[r].results.empty()) {
             std::cerr << "PIR query failed.\n";
@@ -103,9 +114,8 @@ void ZPercyClient::parse_response(nqueries_t req_id) {
         // Output the retrieved block(s)
         vector<PercyResult>::const_iterator resiter;
         for (resiter = results[r].results.begin(); resiter != results[r].results.end(); ++resiter) {
-//            std::cout << resiter->sigma;
-//            std::cout << "DATA_LENGTH " << resiter->sigma.size() << std::endl;
-            this->result_buffer.str(resiter->sigma);
+            // HADI: What if multiple possible blocks?
+            this->result_buffers[r]->str(resiter->sigma);
         }
     }
 
@@ -117,9 +127,9 @@ void ZPercyClient::parse_response(nqueries_t req_id) {
 
 }
 
-int ZPercyClient::read_result(char* buf, int chunk_size) {
-    this->result_buffer.read(buf, chunk_size);
-    return this->result_buffer.gcount();
+int ZPercyClient::read_result(int query_number, char* buf, int chunk_size) {
+    this->result_buffers[query_number]->read(buf, chunk_size);
+    return this->result_buffers[query_number]->gcount();
     // if (this->result_buffer) {
     //     return chunk_size;
     // } else {
@@ -128,10 +138,14 @@ int ZPercyClient::read_result(char* buf, int chunk_size) {
 }
 
 
-nqueries_t client_make_request(ZPercyClient* self, dbsize_t block) {
-    return self->make_request(block);
-//    self->x = 10;
-    return 0;
+nqueries_t client_make_request(ZPercyClient* self, dbsize_t* blocks, int query_count) {
+    vector<dbsize_t> queries;
+
+    for (int i = 0; i < query_count; i++) {
+        queries.push_back(blocks[i]);
+    }
+
+    return self->make_request(queries);
 }
 
 int client_read_request(ZPercyClient* self, nservers_t sid, char* buf, int chunk_size) {
@@ -146,12 +160,12 @@ void client_write_response(ZPercyClient* self, nservers_t sid, char* buf, int ch
     return self->write_response(sid, buf, chunk_size);
 }
 
-int client_read_result(ZPercyClient* self, char* buf, int chunk_size) {
+int client_read_result(ZPercyClient* self, int query_number, char* buf, int chunk_size) {
     if (chunk_size > MAX_CHUNK_SiZE) {
         chunk_size = MAX_CHUNK_SiZE;
     }
 
-    return self->read_result(buf, chunk_size);
+    return self->read_result(query_number, buf, chunk_size);
 }
 
 void client_parse_response(ZPercyClient* self, int req_id) {

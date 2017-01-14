@@ -1,5 +1,5 @@
-#ifndef _Z_AG_
-#define _Z_AG_
+#ifndef _Z_ZZP_
+#define _Z_ZZP_
 
 #include "percytypes.h"
 #include "percyparams.h"
