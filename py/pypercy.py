@@ -38,6 +38,40 @@ class PercyError(Exception):
 class InvalidParamsError(PercyError):
     pass
 
+
+class Session(object):
+    def __init__(self, client, request_id):
+        self.client = client
+        self.request_id = request_id
+
+    def parse_response(self):
+        return self.client.parse_response(self)
+
+    def read_request(self, server_num=0, chunk_size=1024):
+        return self.client.read_request(self, server_num, chunk_size)
+
+    def write_response(self, raw_response, server_num=0):
+        return self.client.write_response(self, raw_response, server_num)
+
+    def request_chunks(self, server_num=0):
+        return self.client.request_chunks(self, server_num)
+
+    def get_request(self, server_num=0):
+        return self.client.get_request(self, server_num)
+
+    def get_all_requests(self):
+        return self.client.get_all_requests(self)
+
+    def read_result(self, query_num, chunk_size=1024):
+        return self.client.read_result(self, query_num, chunk_size)
+
+    def result_chunks(self, query_num):
+        return self.client.result_chunks(self, query_num)
+
+    def get_result(self, query_num=0):
+        return self.client.get_result(self, query_num)
+
+
 class BaseClient(object):
     params_class = BaseParams
 
@@ -54,75 +88,95 @@ class BaseClient(object):
         Implemented by subclass
         """
 
-    def make_request(self, block):
-        lib.client_make_request.argtypes = [ctypes.c_void_p, ctypes.c_int]
-        lib.client_make_request.restype = ctypes.c_int
-        return lib.client_make_request(self.obj, block)
+    def make_request(self, blocks):
+        if not hasattr(blocks, '__iter__'):
+            blocks = [blocks]
+        blocks = list(blocks)
 
-    def parse_response(self, req_id=0):
+        # TODO for 32 bit architecture this must be c_int not c_long
+
+        intarr = (ctypes.c_long * len(blocks))
+        blocks = intarr(*blocks)
+
+        lib.client_make_request.argtypes = [ctypes.c_void_p, ctypes.POINTER(ctypes.c_long), ctypes.c_int]
+        lib.client_make_request.restype = ctypes.c_int
+
+        request_id = lib.client_make_request(self.obj, blocks, len(blocks))
+        return Session(self, request_id)
+
+    def parse_response(self, session):
+        req_id = session.request_id
         # print(type(req_id), type(raw_response), type(self.obj))
         lib.client_parse_response.argtypes = [ctypes.c_void_p, ctypes.c_int]
         lib.client_parse_response.restype = ctypes.c_int
         lib.client_parse_response(self.obj, req_id)
 
-    def read_request(self, server_num=0, chunk_size=1024):
-        lib.client_read_request.argtypes = [ctypes.c_void_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_int]
+    def read_request(self, session, server_num=0, chunk_size=1024):
+        req_id = session.request_id
+        lib.client_read_request.argtypes = [ctypes.c_void_p, ctypes.c_int, ctypes.c_int, ctypes.c_char_p, ctypes.c_int]
         lib.client_read_request.restype = ctypes.c_int
 
         s = ctypes.create_string_buffer(chunk_size)
-        read_amount = lib.client_read_request(self.obj, server_num, s, chunk_size)
+        read_amount = lib.client_read_request(self.obj, req_id, server_num, s, chunk_size)
 
         if read_amount < chunk_size:
             return s.raw[:read_amount]
 
         return s.raw
 
-    def write_response(self, raw_response, server_num=0, req_id=0):
-        lib.client_write_response.argtypes = [ctypes.c_void_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_int]
+    def write_response(self, session, raw_response, server_num=0, req_id=0):
+        req_id = session.request_id
+        lib.client_write_response.argtypes = [ctypes.c_void_p, ctypes.c_int, ctypes.c_int, ctypes.c_char_p, ctypes.c_int]
         lib.client_write_response.restype = ctypes.c_int
-        read_amount = lib.client_write_response(self.obj, server_num, raw_response, len(raw_response))
+        read_amount = lib.client_write_response(self.obj, req_id, server_num, raw_response, len(raw_response))
 
-    def request_chunks(self, server_num=0):
+    def request_chunks(self, session, server_num=0):
+        req_id = session.request_id
         while True:
-            buff = self.read_request(server_num=server_num)
+            buff = self.read_request(session, server_num=server_num)
             if not buff:
                 break
             yield buff
 
-    def get_request(self, server_num=0):
+    def get_request(self, session, server_num=0):
+        req_id = session.request_id
         buff = b''
         a=0
-        for chunk in self.request_chunks(server_num=server_num):
+        for chunk in self.request_chunks(session, server_num=server_num):
             a+=1
             # print(a, chunk)
             buff += chunk
         return buff
 
-    def get_all_requests(self):
-        return [self.get_request(s) for s in range(self.num_servers)]
+    def get_all_requests(self, session):
+        req_id = session.request_id
+        return [self.get_request(session, s) for s in range(self.num_servers)]
 
-    def read_result(self, chunk_size=1024):
-        lib.client_read_result.argtypes = [ctypes.c_void_p, ctypes.c_char_p, ctypes.c_int]
+    def read_result(self, session, query_num, chunk_size=1024):
+        req_id = session.request_id
+        lib.client_read_result.argtypes = [ctypes.c_void_p, ctypes.c_int, ctypes.c_int, ctypes.c_char_p, ctypes.c_int]
         lib.client_read_result.restype = ctypes.c_int
 
         s = ctypes.create_string_buffer(chunk_size)
-        read_amount = lib.client_read_result(self.obj, s, chunk_size)
+        read_amount = lib.client_read_result(self.obj, req_id, query_num, s, chunk_size)
 
         if read_amount < chunk_size:
             return s.raw[:read_amount]
 
         return s.raw
 
-    def result_chunks(self):
+    def result_chunks(self, session, query_num):
+        req_id = session.request_id
         while True:
-            buff = self.read_result()
+            buff = self.read_result(session, query_num=query_num)
             if not buff:
                 break
             yield buff
 
-    def get_result(self):
+    def get_result(self, session, query_num=0):
+        req_id = session.request_id
         buff = b''
-        for chunk in self.result_chunks():
+        for chunk in self.result_chunks(session, query_num=query_num):
             buff += chunk
         return buff
 
@@ -223,6 +277,31 @@ class ZZPServer(BaseServer):
 
     def create_server(self):
         p = self.params
-        lib.server_ag_new.argtypes = [ctypes.c_char_p, ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_bool]
-        lib.server_ag_new.restype = ctypes.c_void_p
+        lib.server_zzp_new.argtypes = [ctypes.c_char_p, ctypes.c_int, ctypes.c_int, ctypes.c_int]
+        lib.server_zzp_new.restype = ctypes.c_void_p
         return lib.server_zzp_new(self.db_file.encode("utf-8"), p.num_blocks, p.block_size, p.w)
+
+
+class ChorParams(BaseParams):
+    num_blocks = None
+    block_size = None
+
+
+class ChorClient(BaseClient):
+    params_class = ChorParams
+
+    def create_client(self):
+        p = self.params
+        lib.client_chor_new.argtypes = [ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_bool]
+        lib.client_chor_new.restype = ctypes.c_void_p
+        return lib.client_chor_new(p.num_blocks, p.block_size, self.num_servers, 0, 0)
+
+
+class ChorServer(BaseServer):
+    params_class = ChorParams
+
+    def create_server(self):
+        p = self.params
+        lib.server_chor_new.argtypes = [ctypes.c_char_p, ctypes.c_int, ctypes.c_int]
+        lib.server_chor_new.restype = ctypes.c_void_p
+        return lib.server_chor_new(self.db_file.encode("utf-8"), p.num_blocks, p.block_size)

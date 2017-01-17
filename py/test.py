@@ -35,10 +35,106 @@ def log(level=logging.DEBUG):
     return wrapper
 
 
+class CommonTest:
+    def make_request(self, log, query, client, servers, **kwargs):
+        t, session = gettime(client.make_request, query)
+        log.debug("client request time:  {}".format(t))
+
+        reqs = []
+        for s in range(len(servers)):
+            reqs.append(session.get_request(server_num=s))
+            log.debug('client request#{} size:  {}'.format(s+1, len(reqs[-1])))
+
+        for s in range(len(servers)):
+            t, _ = gettime(servers[s].process_request, reqs[s])
+            log.debug('server#{} process time:  {}'.format(s+1, t))
+
+        for s in range(len(servers)):
+            sresp = servers[s].get_response()
+            log.debug('server#{} response size: {}'.format(s+1, len(sresp)))
+
+            session.write_response(sresp, server_num=s)
+
+        t, _ = gettime(session.parse_response)
+        log.debug('client parse time:    {}'.format(t))
+
+        return session
+
+    def create_nodes(self, num_blocks, block_size, num_servers, *args, **kwargs):
+        servers = [self.create_server(block_size=block_size, num_blocks=num_blocks) for s in range(num_servers)]
+        client = self.create_client(num_servers=num_servers, block_size=block_size, num_blocks=num_blocks)
+        return client, servers
+
+    def create_server(self, num_blocks, block_size):
+        pass
+
+    def create_client(self, num_servers, num_blocks, block_size):
+        pass
+
+    def check_block(self, content, query, block_size, **kwargs):
+        self.assertEqual(db_content[query * block_size: (query+1) * block_size], content,
+         'PIR content for block {} must match corresponding block from DB'.format(query))
+
+    @log(logging.DEBUG)
+    @params(query=10, num_blocks=160, block_size=2**10, num_servers=2)
+    def test_two_server(self, *args, **kwargs):
+        client, servers = self.create_nodes(**kwargs)
+        session = self.make_request(client=client, servers=servers, *args, **kwargs)
+        resp = session.get_result()
+        self.check_block(resp, **kwargs)
+
+    @log(logging.DEBUG)
+    @params(query=10, num_blocks=160, block_size=2**10, num_servers=3)
+    def test_three_server(self, *args, **kwargs):
+        client, servers = self.create_nodes(**kwargs)
+        session = self.make_request(client=client, servers=servers, *args, **kwargs)
+        resp = session.get_result()
+        self.check_block(resp, **kwargs)
+
+    @log(logging.DEBUG)
+    @params(num_blocks=160, block_size=2**10, num_servers=2)
+    def test_multi_block(self, *args, **kwargs):
+        query = [2,13,7,9]
+
+        client, servers = self.create_nodes(**kwargs)
+        session = self.make_request(client=client, servers=servers, query=query, *args, **kwargs)
+
+        for q in range(len(query)):
+            resp = session.get_result(query_num=q)
+            self.check_block(resp, query=query[q], **kwargs)
+
+    @log(logging.DEBUG)
+    @params(num_blocks=160, block_size=2*10, num_servers=2)
+    def test_reuse(self, *args, **kwargs):
+        queries = range(100)
+
+        client, servers = self.create_nodes(**kwargs)
+        for i in range(100):
+            query = queries[i % len(queries)]
+            session = self.make_request(client=client, servers=servers, query=query, *args, **kwargs)
+            resp = session.get_result()
+            self.check_block(resp, query=query, **kwargs)
+
+    @log(logging.DEBUG)
+    @params(num_blocks=400, block_size=2*10, num_servers=2)
+    def test_multi_block_reuse(self, *args, **kwargs):
+        query_sizes = [2,5,9,3,6,4,29,3,5,12,7,5,6,1,3,14]
+        queries = [range(i, i + query_sizes[i%len(query_sizes)], 2) for i in range(100)]
+
+        client, servers = self.create_nodes(**kwargs)
+        for i in range(100):
+            query = queries[i % len(queries)]
+            session = self.make_request(client=client, servers=servers, query=query, *args, **kwargs)
+
+            for q in range(len(query)):
+                resp = session.get_result(query_num=q)
+                self.check_block(resp, query=query[q], **kwargs)
+
+
 class TestAGPIR(unittest.TestCase):
     @log(logging.DEBUG)
     @params(num_blocks=10, block_size=100, query=0)
-    @unittest.skip("fuck off")
+    @unittest.skip("")
     def test_nb10_bs100(self, log, num_blocks, block_size, query):
         server = AGServer(db, num_blocks=num_blocks, block_size=block_size)
         client = AGClient(num_blocks=num_blocks, block_size=block_size)
@@ -62,41 +158,21 @@ class TestAGPIR(unittest.TestCase):
 
         self.assertEqual(db_content[query * block_size: (query+1) * block_size], resp, 'PIR content matches DB')
 
-class TestITPIR(unittest.TestCase):
-    @log(logging.DEBUG)
-    @params(query=0, num_blocks=100, block_size=100, w=8, num_servers=2, t=2)
-    def test_nb100_bs100(self, log, query, num_blocks, block_size, w, num_servers, t):
-        server1 = ZZPServer(db, num_blocks=num_blocks, block_size=block_size, w=w)
-        server2 = ZZPServer(db, num_blocks=num_blocks, block_size=block_size, w=w)
-        client = ZZPClient(num_blocks=num_blocks, block_size=block_size, w=w, num_servers=num_servers)
-        #
-        t, req_id = gettime(client.make_request, query)
-        log.debug("client request time:  {}".format(t))
+class TestITPIR(unittest.TestCase, CommonTest):
+    def create_server(self, num_blocks, block_size):
+        return ZZPServer(db, num_blocks=num_blocks, block_size=block_size, w=8)
 
-        req1 = client.get_request(server_num=0)
-        log.debug('client request#1 size:  {}'.format(len(req1)))
-        req2 = client.get_request(server_num=1)
-        log.debug('client request#2 size:  {}'.format(len(req2)))
+    def create_client(self, num_servers, num_blocks, block_size):
+        return ZZPClient(num_blocks=num_blocks, block_size=block_size, num_servers=num_servers, w=8, t=1)  # TODO: Not sure about t=1, shoud be 2?
 
-        t, _ = gettime(server1.process_request, req1)
-        log.debug('server#1 process time:  {}'.format(t))
-        t, _ = gettime(server2.process_request, req2)
-        log.debug('server#2 process time:  {}'.format(t))
 
-        sresp1 = server1.get_response()
-        log.debug('server#1 response size: {}'.format(len(sresp1)))
-        sresp2 = server2.get_response()
-        log.debug('server#2 response size: {}'.format(len(sresp2)))
+class TestChorPIR(unittest.TestCase, CommonTest):
+    def create_server(self, num_blocks, block_size):
+        return ChorServer(db, num_blocks=num_blocks, block_size=block_size)
 
-        client.write_response(sresp1, server_num=0)
-        client.write_response(sresp2, server_num=1)
+    def create_client(self, num_servers, num_blocks, block_size):
+        return ChorClient(num_blocks=num_blocks, block_size=block_size, num_servers=num_servers)
 
-        t, _ = gettime(client.parse_response)
-        log.debug('client parse time:    {}'.format(t))
-
-        resp = client.get_result()
-
-        self.assertEqual(db_content[query * block_size: (query+1) * block_size], resp, 'PIR content matches DB')
 
 
 def gettime(f, *args, **kwargs):
